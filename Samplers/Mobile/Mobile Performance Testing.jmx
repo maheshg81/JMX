@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1413798983000</longProp>
+        <longProp name="ThreadGroup.end_time">1413798983000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Detected a redirect from the previous sample</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">23244</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate,sdch</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="un" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">un</stringProp>
+                <stringProp name="Argument.value">gskr24@gmail.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="width" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">width</stringProp>
+                <stringProp name="Argument.value">360</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="height" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">height</stringProp>
+                <stringProp name="Argument.value">640</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="hasRememberUn" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">hasRememberUn</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="startURL" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">startURL</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="loginURL" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">loginURL</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="loginType" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">loginType</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="useSecure" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">useSecure</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="local" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">local</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="lt" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">lt</stringProp>
+                <stringProp name="Argument.value">standard</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="qs" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">qs</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="locale" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">locale</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="oauth_token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">oauth_token</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="oauth_callback" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">oauth_callback</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="login" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">login</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="serverid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">serverid</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="display" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">display</stringProp>
+                <stringProp name="Argument.value">touch</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="username" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">username</stringProp>
+                <stringProp name="Argument.value">gskr24@gmail.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="pw" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">pw</stringProp>
+                <stringProp name="Argument.value">cloud@123</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="Login" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">Login</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="rememberUn" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">rememberUn</stringProp>
+                <stringProp name="Argument.value">on</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20750</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Cache-Control" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">max-age=0</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/one/one.app" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/one/one.app</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1498</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate,sdch</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://c.ap1.content.force.com/secur/contentDoor?startURL=%2Fone%2Fone.app&amp;sid=00D90000000yGVj%21AQIAQBXOysJArDZUr45vbPc19QHsNB_0UTSUeG3j1ecAykV7eXp4LGEXbuek6hrIlf0a5GgtrOV7qw5XU5aWebadLUW3HeGi&amp;skipRedirect=1&amp;display=touch&amp;lm=Bhj9cq9epgOSIookTzaKlA%3D%3D</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;2.a&quot;,&quot;descriptor&quot;:&quot;aura://ComponentController/ACTION$getApplication&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;one:one&quot;}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">null</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">16893</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/profilephoto/005/T" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">c.ap1.content.force.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/profilephoto/005/T</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1305</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">image/webp,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate,sdch</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;53.a&quot;,&quot;descriptor&quot;:&quot;java://tasksproto.controllers.TaskStatusBrokerDataProviderController/ACTION$getStatuses&quot;,&quot;params&quot;:{}},{&quot;id&quot;:&quot;80.a&quot;,&quot;descriptor&quot;:&quot;aura://ComponentController/ACTION$getComponent&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;one:chatter&quot;,&quot;attributes&quot;:{}}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1309</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;146.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.one.actionBar.ActionBarController/ACTION$getActions&quot;,&quot;params&quot;:{&quot;context&quot;:&quot;NEWS&quot;,&quot;record&quot;:null}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">3</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">2973</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;154.a&quot;,&quot;descriptor&quot;:&quot;aura://LabelController/ACTION$getLabel&quot;,&quot;params&quot;:{&quot;section&quot;:&quot;Feeds&quot;,&quot;name&quot;:&quot;Checked&quot;}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">4</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;60.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;one:chatter\&quot;},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;actionBarLoaded\&quot;},\&quot;num\&quot;:12}&quot;}},{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;one:chatter\&quot;},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;toggleNav\&quot;}}&quot;}}]}},{&quot;id&quot;:&quot;209.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;one:chatter\&quot;},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;force.navigateToComponent\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;one:search\&quot;,\&quot;componentAttributes\&quot;:{\&quot;scopeLabelSingular\&quot;:\&quot;Account\&quot;,\&quot;scope\&quot;:\&quot;Account\&quot;,\&quot;scopeLabel\&quot;:\&quot;Accounts\&quot;,\&quot;scopeIcon\&quot;:\&quot;https://ap1.salesforce.com/img/icon/t4v32/standard/account_120.png\&quot;,\&quot;scopeId\&quot;:\&quot;001\&quot;,\&quot;scopeColor\&quot;:\&quot;7F8DE1\&quot;,\&quot;hideScopeSelector\&quot;:true}}}}&quot;}}]}},{&quot;id&quot;:&quot;228.a&quot;,&quot;descriptor&quot;:&quot;aura://ComponentController/ACTION$getComponent&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;one:search&quot;,&quot;attributes&quot;:{&quot;scopeLabelSingular&quot;:&quot;Account&quot;,&quot;scope&quot;:&quot;Account&quot;,&quot;scopeLabel&quot;:&quot;Accounts&quot;,&quot;scopeIcon&quot;:&quot;https://ap1.salesforce.com/img/icon/t4v32/standard/account_120.png&quot;,&quot;scopeId&quot;:&quot;001&quot;,&quot;scopeColor&quot;:&quot;7F8DE1&quot;,&quot;hideScopeSelector&quot;:true}}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">5857</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;277.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.search.SearchController/ACTION$getMruItems&quot;,&quot;params&quot;:{&quot;scope&quot;:&quot;Account&quot;,&quot;maxResults&quot;:50}},{&quot;id&quot;:&quot;279.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.search.SearchController/ACTION$getMruListViews&quot;,&quot;params&quot;:{&quot;scope&quot;:&quot;Account&quot;,&quot;maxResults&quot;:4}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">6</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;299.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.force.createRecordTypeChecker.CreateRecordTypeCheckerController/ACTION$doRecordTypeCheck&quot;,&quot;params&quot;:{&quot;entityApiName&quot;:&quot;Account&quot;,&quot;navigationLocation&quot;:&quot;LIST_VIEW&quot;,&quot;removeAnimations&quot;:false}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">7</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3468</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;60.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;one:search\&quot;,\&quot;componentAttributes\&quot;:{\&quot;scopeLabelSingular\&quot;:\&quot;Account\&quot;,\&quot;scope\&quot;:\&quot;Account\&quot;,\&quot;scopeLabel\&quot;:\&quot;Accounts\&quot;,\&quot;scopeIcon\&quot;:\&quot;https://ap1.salesforce.com/img/icon/t4v32/standard/account_120.png\&quot;,\&quot;scopeId\&quot;:\&quot;001\&quot;,\&quot;scopeColor\&quot;:\&quot;7F8DE1\&quot;,\&quot;hideScopeSelector\&quot;:true}},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;action\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;New\&quot;,\&quot;componentAttributes\&quot;:{}}}}&quot;}}]}},{&quot;id&quot;:&quot;320.a&quot;,&quot;descriptor&quot;:&quot;java://appex.core.app.OneController/ACTION$getComponent&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;force:detailPanel&quot;,&quot;attributes&quot;:{&quot;entityApiName&quot;:&quot;Account&quot;,&quot;navigationLocation&quot;:&quot;LIST_VIEW&quot;,&quot;mode&quot;:&quot;EDIT&quot;}}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">8</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">4521</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;564.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.force.detail.DetailController/ACTION$saveRecord&quot;,&quot;params&quot;:{&quot;record&quot;:{&quot;ParentId&quot;:null,&quot;TickerSymbol&quot;:null,&quot;OwnerAlias&quot;:null,&quot;ConnectionReceivedId&quot;:null,&quot;ConnectionReceivedDate&quot;:null,&quot;LastModifiedDate&quot;:null,&quot;PersonDepartment&quot;:null,&quot;NumberOfEmployees&quot;:null,&quot;PersonHasOptedOutOfFax&quot;:null,&quot;DandbCompanyId&quot;:null,&quot;PersonMiddleNameLocal&quot;:null,&quot;OrgAdjustedTodaysDate&quot;:null,&quot;ShippingCity&quot;:null,&quot;ConnectionSentDate&quot;:null,&quot;PersonTitle&quot;:null,&quot;PersonFirstNameLocal&quot;:null,&quot;Jigsaw&quot;:null,&quot;IsLocked&quot;:null,&quot;ShippingCountry&quot;:null,&quot;BillingStreet&quot;:null,&quot;PersonAssistantName&quot;:null,&quot;PersonOtherStreet&quot;:null,&quot;BillingCity&quot;:null,&quot;ShippingLongitude&quot;:null,&quot;Rating&quot;:&quot;&quot;,&quot;NaicsDesc&quot;:null,&quot;CreatedById&quot;:null,&quot;PersonOtherPostalCode&quot;:null,&quot;IsDeleted&quot;:false,&quot;PersonAssistantPhone&quot;:null,&quot;CompareSite&quot;:null,&quot;UpsellOpportunity__c&quot;:&quot;&quot;,&quot;DunsNumber&quot;:null,&quot;AccountSource&quot;:null,&quot;SLAExpirationDate__c&quot;:null,&quot;Tradestyle&quot;:null,&quot;IsCustomerPortal&quot;:null,&quot;BillingCountryCode&quot;:null,&quot;OwnerId&quot;:&quot;005900000030ssaAAA&quot;,&quot;PersonOtherXyz&quot;:null,&quot;AnnualRevenue&quot;:null,&quot;AnnualRevenue__formatted&quot;:&quot;&quot;,&quot;BillingState&quot;:null,&quot;PersonOtherPhone&quot;:null,&quot;BillingPostalCode&quot;:null,&quot;PersonEmailBouncedDate&quot;:null,&quot;SystemModstamp&quot;:null,&quot;PhotoUrl&quot;:null,&quot;PersonMailingLatitude&quot;:null,&quot;PersonLeadSource&quot;:null,&quot;PersonLastCURequestDate&quot;:null,&quot;PersonMailingPostalCode&quot;:null,&quot;LastReferencedDate&quot;:null,&quot;ShippingStreet&quot;:null,&quot;YearStarted&quot;:null,&quot;OrgNumLicenses&quot;:null,&quot;SLA__c&quot;:&quot;&quot;,&quot;BillingStateCode&quot;:null,&quot;MasterRecordId&quot;:null,&quot;PersonHomePhone&quot;:null,&quot;UserRecordAccessId&quot;:null,&quot;PersonLastNameLocal&quot;:null,&quot;MayEdit&quot;:null,&quot;CreatedDate&quot;:null,&quot;JigsawCompanyId&quot;:null,&quot;Sic&quot;:null,&quot;PersonLastCUUpdateDate&quot;:null,&quot;PersonDoNotCall&quot;:null,&quot;SicDesc&quot;:null,&quot;RecordTypeId&quot;:null,&quot;BillingXyz&quot;:null,&quot;PersonInformalNameLocal&quot;:null,&quot;CompareName&quot;:null,&quot;PersonMailingXyz&quot;:null,&quot;PersonHasOptedOutOfEmail&quot;:null,&quot;NumberofLocations__c&quot;:null,&quot;PersonMailingCity&quot;:null,&quot;PersonOtherState&quot;:null,&quot;OrgId&quot;:null,&quot;RowVersion&quot;:null,&quot;ShippingLatitude&quot;:null,&quot;PersonOtherStateCode&quot;:null,&quot;NaicsCode&quot;:null,&quot;BillingLongitude&quot;:null,&quot;BillingCountry&quot;:null,&quot;Site&quot;:null,&quot;CurrencyIsoCode&quot;:null,&quot;IsExcludedFromRealign&quot;:null,&quot;AccountNumber&quot;:null,&quot;ShippingXyz&quot;:null,&quot;Active__c&quot;:&quot;&quot;,&quot;LastViewedDate&quot;:null,&quot;PersonMailingStateCode&quot;:null,&quot;PersonMailingLongitude&quot;:null,&quot;CleanStatus&quot;:&quot;Pending&quot;,&quot;PersonMailingStreet&quot;:null,&quot;Id&quot;:null,&quot;ShippingCountryCode&quot;:null,&quot;ShippingPostalCode&quot;:null,&quot;IsPartner&quot;:null,&quot;PersonOtherCity&quot;:null,&quot;IsCssEnabled&quot;:null,&quot;IsPersonAccount&quot;:null,&quot;Industry&quot;:&quot;&quot;,&quot;SalesforceCustomer&quot;:null,&quot;PersonEmailBouncedReason&quot;:null,&quot;Phone&quot;:null,&quot;PersonContactId&quot;:null,&quot;PersonMobilePhone&quot;:null,&quot;Type&quot;:&quot;&quot;,&quot;PersonMailingCountryCode&quot;:null,&quot;ShippingState&quot;:null,&quot;ConnectionSentId&quot;:null,&quot;BillingLatitude&quot;:null,&quot;PersonOtherLongitude&quot;:null,&quot;Territories&quot;:null,&quot;PersonOtherCountry&quot;:null,&quot;LastActivityDate&quot;:null,&quot;OrgTimeZoneSidKey&quot;:null,&quot;SLASerialNumber__c&quot;:null,&quot;PersonOtherCountryCode&quot;:null,&quot;PersonMailingCountry&quot;:null,&quot;Owner&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssa&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;ShippingStateCode&quot;:null,&quot;Description&quot;:null,&quot;LastModifiedById&quot;:null,&quot;Website&quot;:null,&quot;Fax&quot;:null,&quot;PersonBirthdate&quot;:null,&quot;PersonMailingState&quot;:null,&quot;CustomerPriority__c&quot;:&quot;&quot;,&quot;NameLocal&quot;:null,&quot;Name&quot;:&quot;name&quot;,&quot;PersonOtherLatitude&quot;:null,&quot;Division&quot;:null,&quot;OrgStatus&quot;:null,&quot;Ownership&quot;:&quot;&quot;,&quot;PersonEmail&quot;:null,&quot;CssLastLoginDate&quot;:null,&quot;sobjectType&quot;:&quot;Account&quot;},&quot;recordSaveParams&quot;:{},&quot;crudAction&quot;:&quot;CREATE&quot;,&quot;navigationLocation&quot;:&quot;LIST_VIEW&quot;}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">9</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">29865</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;60.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;one:search\&quot;,\&quot;componentAttributes\&quot;:{\&quot;scopeLabelSingular\&quot;:\&quot;Account\&quot;,\&quot;scope\&quot;:\&quot;Account\&quot;,\&quot;scopeLabel\&quot;:\&quot;Accounts\&quot;,\&quot;scopeIcon\&quot;:\&quot;https://ap1.salesforce.com/img/icon/t4v32/standard/account_120.png\&quot;,\&quot;scopeId\&quot;:\&quot;001\&quot;,\&quot;scopeColor\&quot;:\&quot;7F8DE1\&quot;,\&quot;hideScopeSelector\&quot;:true}},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;action\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;SaveEdit\&quot;,\&quot;componentAttributes\&quot;:{}}}}&quot;}}]}},{&quot;id&quot;:&quot;581.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;one:search\&quot;,\&quot;componentAttributes\&quot;:{\&quot;scopeLabelSingular\&quot;:\&quot;Account\&quot;,\&quot;scope\&quot;:\&quot;Account\&quot;,\&quot;scopeLabel\&quot;:\&quot;Accounts\&quot;,\&quot;scopeIcon\&quot;:\&quot;https://ap1.salesforce.com/img/icon/t4v32/standard/account_120.png\&quot;,\&quot;scopeId\&quot;:\&quot;001\&quot;,\&quot;scopeColor\&quot;:\&quot;7F8DE1\&quot;,\&quot;hideScopeSelector\&quot;:true}},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;force.navigateToSObject\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;/sObject/{recordId}/view?slideDevName={slideDevName}&amp;ignoreExistingAction={ignoreExistingAction}\&quot;,\&quot;componentAttributes\&quot;:{\&quot;recordId\&quot;:\&quot;00190000016mpTLAAY\&quot;}}}}&quot;}}]}},{&quot;id&quot;:&quot;603.a&quot;,&quot;descriptor&quot;:&quot;aura://ComponentController/ACTION$getComponent&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;force:recordHome&quot;,&quot;attributes&quot;:{&quot;recordId&quot;:&quot;00190000016mpTLAAY&quot;}}},{&quot;id&quot;:&quot;613.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;force:recordHome\&quot;},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;recordAction\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;CREATE\&quot;}}}&quot;}}]}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">10</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">12847</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;699.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.sfa.socialphoto.SocialPhotoController/ACTION$resolvePhoto&quot;,&quot;params&quot;:{&quot;recordId&quot;:&quot;00190000016mpTLAAY&quot;}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;,&quot;rl_001_VIEW_COMPACT_62504e464d5737716533564c446179724571486365513d3d&quot;,&quot;rl_001_VIEW_FULL_5248433673614875726856784971725477562b7632413d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">12</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">11108</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;682.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.one.actionBar.ActionBarController/ACTION$getActions&quot;,&quot;params&quot;:{&quot;recordId&quot;:&quot;00190000016mpTLAAY&quot;,&quot;context&quot;:&quot;RECORD&quot;,&quot;record&quot;:null}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;,&quot;rl_001_VIEW_COMPACT_62504e464d5737716533564c446179724571486365513d3d&quot;,&quot;rl_001_VIEW_FULL_5248433673614875726856784971725477562b7632413d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">11</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">2397</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;710.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.force.tabBar.TabBarController/ACTION$getServerSideComponent&quot;,&quot;params&quot;:{&quot;descriptor&quot;:&quot;markup://forceChatter:recordFeedContainer&quot;,&quot;attributes&quot;:{&quot;record&quot;:{&quot;ParentId&quot;:null,&quot;TickerSymbol&quot;:null,&quot;Owner.Id&quot;:null,&quot;LastModifiedDate&quot;:&quot;2014-10-20T09:55:09.000Z&quot;,&quot;LastModifiedBy&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssaAAA&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;NumberOfEmployees&quot;:null,&quot;NumberofLocations__c&quot;:null,&quot;ShippingCity&quot;:null,&quot;BillingCountry&quot;:null,&quot;Site&quot;:null,&quot;ShippingCountry&quot;:null,&quot;AccountNumber&quot;:null,&quot;BillingStreet&quot;:null,&quot;Active__c&quot;:null,&quot;CreatedBy.Id&quot;:null,&quot;BillingCity&quot;:null,&quot;Rating&quot;:null,&quot;CreatedById&quot;:&quot;005900000030ssaAAA&quot;,&quot;Id&quot;:&quot;00190000016mpTLAAY&quot;,&quot;ShippingPostalCode&quot;:null,&quot;Industry&quot;:null,&quot;UpsellOpportunity__c&quot;:null,&quot;Parent.Name&quot;:null,&quot;Phone&quot;:null,&quot;Owner.Name&quot;:null,&quot;SLAExpirationDate__c&quot;:null,&quot;Type&quot;:null,&quot;OwnerId&quot;:&quot;005900000030ssaAAA&quot;,&quot;ShippingState&quot;:null,&quot;LastModifiedBy.Id&quot;:null,&quot;AnnualRevenue&quot;:null,&quot;AnnualRevenue__formatted&quot;:&quot;&quot;,&quot;BillingState&quot;:null,&quot;LastModifiedBy.Name&quot;:null,&quot;BillingPostalCode&quot;:null,&quot;CreatedBy.Name&quot;:null,&quot;SystemModstamp&quot;:&quot;2014-10-20T09:55:09.000Z&quot;,&quot;SLASerialNumber__c&quot;:null,&quot;PhotoUrl&quot;:&quot;/services/images/photo/00190000016mpTLAAY&quot;,&quot;Owner&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssaAAA&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;Description&quot;:null,&quot;LastModifiedById&quot;:&quot;005900000030ssaAAA&quot;,&quot;Website&quot;:null,&quot;ShippingStreet&quot;:null,&quot;Fax&quot;:null,&quot;SLA__c&quot;:null,&quot;CustomerPriority__c&quot;:null,&quot;Name&quot;:&quot;name&quot;,&quot;CreatedBy&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssaAAA&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;CreatedDate&quot;:&quot;2014-10-20T09:55:09.000Z&quot;,&quot;Parent.Id&quot;:null,&quot;Sic&quot;:null,&quot;Ownership&quot;:null,&quot;sobjectType&quot;:&quot;Account&quot;},&quot;recordId&quot;:&quot;00190000016mpTLAAY&quot;}}},{&quot;id&quot;:&quot;716.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.force.tabBar.TabBarController/ACTION$getServerSideComponent&quot;,&quot;params&quot;:{&quot;descriptor&quot;:&quot;markup://force:relatedCardContainer&quot;,&quot;attributes&quot;:{&quot;record&quot;:{&quot;ParentId&quot;:null,&quot;TickerSymbol&quot;:null,&quot;Owner.Id&quot;:null,&quot;LastModifiedDate&quot;:&quot;2014-10-20T09:55:09.000Z&quot;,&quot;LastModifiedBy&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssaAAA&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;NumberOfEmployees&quot;:null,&quot;NumberofLocations__c&quot;:null,&quot;ShippingCity&quot;:null,&quot;BillingCountry&quot;:null,&quot;Site&quot;:null,&quot;ShippingCountry&quot;:null,&quot;AccountNumber&quot;:null,&quot;BillingStreet&quot;:null,&quot;Active__c&quot;:null,&quot;CreatedBy.Id&quot;:null,&quot;BillingCity&quot;:null,&quot;Rating&quot;:null,&quot;CreatedById&quot;:&quot;005900000030ssaAAA&quot;,&quot;Id&quot;:&quot;00190000016mpTLAAY&quot;,&quot;ShippingPostalCode&quot;:null,&quot;Industry&quot;:null,&quot;UpsellOpportunity__c&quot;:null,&quot;Parent.Name&quot;:null,&quot;Phone&quot;:null,&quot;Owner.Name&quot;:null,&quot;SLAExpirationDate__c&quot;:null,&quot;Type&quot;:null,&quot;OwnerId&quot;:&quot;005900000030ssaAAA&quot;,&quot;ShippingState&quot;:null,&quot;LastModifiedBy.Id&quot;:null,&quot;AnnualRevenue&quot;:null,&quot;AnnualRevenue__formatted&quot;:&quot;&quot;,&quot;BillingState&quot;:null,&quot;LastModifiedBy.Name&quot;:null,&quot;BillingPostalCode&quot;:null,&quot;CreatedBy.Name&quot;:null,&quot;SystemModstamp&quot;:&quot;2014-10-20T09:55:09.000Z&quot;,&quot;SLASerialNumber__c&quot;:null,&quot;PhotoUrl&quot;:&quot;/services/images/photo/00190000016mpTLAAY&quot;,&quot;Owner&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssaAAA&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;Description&quot;:null,&quot;LastModifiedById&quot;:&quot;005900000030ssaAAA&quot;,&quot;Website&quot;:null,&quot;ShippingStreet&quot;:null,&quot;Fax&quot;:null,&quot;SLA__c&quot;:null,&quot;CustomerPriority__c&quot;:null,&quot;Name&quot;:&quot;name&quot;,&quot;CreatedBy&quot;:{&quot;Name&quot;:&quot;umesh g&quot;,&quot;Id&quot;:&quot;005900000030ssaAAA&quot;,&quot;sobjectType&quot;:&quot;User&quot;},&quot;CreatedDate&quot;:&quot;2014-10-20T09:55:09.000Z&quot;,&quot;Parent.Id&quot;:null,&quot;Sic&quot;:null,&quot;Ownership&quot;:null,&quot;sobjectType&quot;:&quot;Account&quot;},&quot;recordId&quot;:&quot;00190000016mpTLAAY&quot;}}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;,&quot;rl_001_VIEW_COMPACT_62504e464d5737716533564c446179724571486365513d3d&quot;,&quot;rl_001_VIEW_FULL_5248433673614875726856784971725477562b7632413d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">13</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1694</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;60.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;force:recordHome\&quot;},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;actionBarLoaded\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;00190000016mpTLAAY\&quot;}},\&quot;num\&quot;:15}&quot;}}]}},{&quot;id&quot;:&quot;776.a&quot;,&quot;descriptor&quot;:&quot;java://ui.aura.components.one.appAnalytics.AppAnalyticsController/ACTION$doHandle&quot;,&quot;params&quot;:{&quot;batch&quot;:[{&quot;uitrk&quot;:{&quot;jsonData&quot;:&quot;{\&quot;currentLocation\&quot;:{\&quot;componentDef\&quot;:\&quot;force:recordHome\&quot;},\&quot;action\&quot;:{\&quot;eventDef\&quot;:\&quot;force.navigateToSObject\&quot;,\&quot;eventParams\&quot;:{\&quot;componentDef\&quot;:\&quot;/sObject/{recordId}/view?slideDevName={slideDevName}&amp;ignoreExistingAction={ignoreExistingAction}\&quot;,\&quot;componentAttributes\&quot;:{\&quot;recordId\&quot;:\&quot;005900000030ssaAAA\&quot;}}}}&quot;}}]}},{&quot;id&quot;:&quot;801.a&quot;,&quot;descriptor&quot;:&quot;aura://ComponentController/ACTION$getComponent&quot;,&quot;params&quot;:{&quot;name&quot;:&quot;force:recordHome&quot;,&quot;attributes&quot;:{&quot;recordId&quot;:&quot;005900000030ssaAAA&quot;}}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;,&quot;rl_001_VIEW_COMPACT_62504e464d5737716533564c446179724571486365513d3d&quot;,&quot;rl_001_VIEW_FULL_5248433673614875726856784971725477562b7632413d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">14</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">10007</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/aura" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="message" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">message</stringProp>
+                <stringProp name="Argument.value">{&quot;actions&quot;:[{&quot;id&quot;:&quot;883.a&quot;,&quot;descriptor&quot;:&quot;serviceComponent://ui.aura.components.one.actionBar.ActionBarController/ACTION$getActions&quot;,&quot;params&quot;:{&quot;recordId&quot;:&quot;005900000030ssaAAA&quot;,&quot;context&quot;:&quot;RECORD&quot;,&quot;record&quot;:null}}]}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.token" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.token</stringProp>
+                <stringProp name="Argument.value">EG6sZlJ9aYnk52GoSPEmVeVb_n_PT4rQt9fL62s5de6DQm.7mwtnRTfqxRR15boPMR9FKLbTZ7pJpQfbcSqMDCi76spyuU6g_Pg7xncsfxeaqdgY8o7NrIjYwPdADOduRoGjSQ==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.context" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">aura.context</stringProp>
+                <stringProp name="Argument.value">{&quot;mode&quot;:&quot;PROD&quot;,&quot;loaded&quot;:{&quot;APPLICATION@markup://one:one&quot;:&quot;LV-y2l7q5cyhGAJsFRdKrA&quot;},&quot;dn&quot;:[&quot;rl_001_EDIT_FULL_6f764b4b626731666f346463734952525243723069773d3d&quot;,&quot;rl_001_VIEW_COMPACT_62504e464d5737716533564c446179724571486365513d3d&quot;,&quot;rl_001_VIEW_FULL_5248433673614875726856784971725477562b7632413d3d&quot;,&quot;rl_005_VIEW_COMPACT_4c686d4b446c44756e422b6949456a77596e396e77773d3d&quot;],&quot;app&quot;:&quot;one:one&quot;,&quot;lastmod&quot;:&quot;1412784934000&quot;,&quot;fwuid&quot;:&quot;Tx1IuJEex0hXfP8Rt4IcdA&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="aura.num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">aura.num</stringProp>
+                <stringProp name="Argument.value">15</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ap1.salesforce.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/aura</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">13001</stringProp>
+            <stringProp name="RandomTimer.range">100.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 4.4.4; XT1033 Build/KXB21.14-L1.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip,deflate</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ap1.salesforce.com/one/one.app</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

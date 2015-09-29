@@ -1,0 +1,26 @@
+line 2 column 2,190 - Warning: <script> lacks "type" attribute
+line 2 column 2,462 - Warning: <script> lacks "type" attribute
+line 2 column 2,524 - Warning: <script> lacks "type" attribute
+line 2 column 2,580 - Warning: <script> lacks "type" attribute
+line 2 column 3,179 - Warning: <br> element not empty or not closed
+line 2 column 4,368 - Warning: <form> lacks "action" attribute
+line 2 column 4,535 - Warning: unknown attribute "placeholder"
+line 2 column 4,710 - Warning: <input> element not empty or not closed
+line 2 column 5,311 - Warning: unknown attribute "novalidate"
+line 2 column 5,311 - Warning: unknown attribute "autocomplete"
+line 2 column 5,311 - Warning: <form> Anchor "login" already defined
+line 21 column 412 - Warning: unknown attribute "placeholder"
+line 21 column 669 - Warning: <input> element not empty or not closed
+line 21 column 1,132 - Warning: unknown attribute "autocomplete"
+line 21 column 1,132 - Warning: unknown attribute "placeholder"
+line 21 column 1,419 - Warning: <input> element not empty or not closed
+line 21 column 1,500 - Warning: img lacks "src" attribute
+line 21 column 1,624 - Warning: <button> Anchor "Login" already defined
+line 21 column 1,873 - Warning: <input> element not empty or not closed
+line 21 column 2,389 - Warning: <script> lacks "type" attribute
+line 21 column 2,505 - Warning: <iframe> dropping value "marketing" for repeated attribute "id"
+line 21 column 2,724 - Warning: <script> lacks "type" attribute
+line 21 column 2,777 - Warning: <script> lacks "type" attribute
+InputStream: Doctype given is "-//W3C//DTD XHTML 1.0 Transitional//EN"
+InputStream: Document content looks like XHTML 1.0 Transitional
+23 warnings, no errors were found!
